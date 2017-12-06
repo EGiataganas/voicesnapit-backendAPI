@@ -9,6 +9,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
 gem 'paperclip', '~> 5.0.0'
 gem 'aws-sdk', '~> 3'
+gem 'microsoft_computer_vision'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
