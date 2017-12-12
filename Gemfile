@@ -14,6 +14,7 @@ gem 'microsoft_computer_vision'
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '~> 3.6'
+  gem 'pry'
 end
 
 group :development do
