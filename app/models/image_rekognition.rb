@@ -14,10 +14,4 @@ class ImageRekognition
       image: { bytes: imageIO }
     )
   end
-
-  def humanise
-    response.labels.map do |label|
-      { name: label.name, confidence: label.confidence.to_i }
-    end
-  end
 end
