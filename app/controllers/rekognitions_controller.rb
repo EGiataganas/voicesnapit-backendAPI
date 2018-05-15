@@ -14,6 +14,8 @@ class RekognitionsController < ApplicationController
     render json: @output.compact.join(", ").to_json
   end
 
+  private
+
   def image_param
     params.require(:image)
   end
