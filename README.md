@@ -1,24 +1,41 @@
-# README
+# VoiceSnapIT
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+VoiceSnapIT is a backend API which integrates two image recognition services [AWS Rekognition](https://aws.amazon.com/rekognition/) and [Microsoft Computer Vision](https://azure.microsoft.com/en-gb/services/cognitive-services/computer-vision/).
 
-Things you may want to cover:
+| Dependency | Version |
+|:-----------|:--------|
+| Ruby       | 2.5.1   |
+| Rails      | 5.1.4   |
+| Postgresql | 0.21    |
 
-* Ruby version
+## Getting Started
 
-* System dependencies
+1. Clone the project
 
-* Configuration
+  ```
+  git@github.com:EGiataganas/voicesnapit-backendAPI.git
+  ```
 
-* Database creation
+2. Install project's dependencies using bundler.
 
-* Database initialization
+  ```
+  bundle install
+  ```
 
-* How to run the test suite
+3. Next, migrate the database:
 
-* Services (job queues, cache servers, search engines, etc.)
+  ```
+  rake db:create db:migrate
+  ```
 
-* Deployment instructions
+4. Run tests
 
-* ...
+  ```
+  rspec
+  ```
+
+5. Startup the Server
+
+  ```
+  rails server
+  ```
